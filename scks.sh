@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo systemctl stop tinyproxy
-sudo apt remove tinyproxy
+sudo apt remove tinyproxy -y
 sudo systemctl disable tinyproxy
 sudo rm /etc/systemd/system/tinyproxy.service
 sudo apt install shadowsocks-libev
