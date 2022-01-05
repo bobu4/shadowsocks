@@ -3,7 +3,7 @@ sudo systemctl stop tinyproxy
 sudo apt remove tinyproxy -y
 sudo systemctl disable tinyproxy
 sudo rm /etc/systemd/system/tinyproxy.service
-sudo apt install shadowsocks-libev
+sudo apt install shadowsocks-libev -y
 read -sp 'Password: ' passwd
 printf "\n"
 sudo tee <<EOF >/dev/null /etc/shadowsocks-libev/config.json
